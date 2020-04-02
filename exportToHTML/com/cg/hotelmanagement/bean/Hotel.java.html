@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Hotel.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Hotel.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">com.cg.hotelmanagement.bean</span><span class="s0">;</span>
+
+import <span class="s1">java.util.LinkedList</span><span class="s0">;</span>
+import <span class="s1">java.util.List</span><span class="s0">;</span>
+
+public class <span class="s1">Hotel {</span>
+
+    <span class="s0">private </span><span class="s1">String hotelId</span><span class="s0">;</span>
+    private <span class="s1">String hotelName</span><span class="s0">;</span>
+    private <span class="s1">String hotelType</span><span class="s0">;</span>
+    private <span class="s1">String hotelAddress</span><span class="s0">;</span>
+    private <span class="s1">String hotelPhoneNo</span><span class="s0">;</span>
+    private <span class="s1">String hotelRating</span><span class="s0">;</span>
+    private <span class="s1">List&lt;Room&gt; roomList = </span><span class="s0">new </span><span class="s1">LinkedList&lt;&gt;()</span><span class="s0">;</span>
+
+    public <span class="s1">Hotel(){</span>
+
+    }
+
+    <span class="s0">public </span><span class="s1">Hotel(String hotelId</span><span class="s0">, </span><span class="s1">String hotelName</span><span class="s0">, </span><span class="s1">String hotelType</span><span class="s0">, </span><span class="s1">String hotelAddress</span><span class="s0">, </span><span class="s1">String hotelPhoneNo</span><span class="s0">, </span><span class="s1">String hotelRating</span><span class="s0">, </span><span class="s1">List&lt;Room&gt; roomList) {</span>
+        <span class="s0">this</span><span class="s1">.hotelId = hotelId</span><span class="s0">;</span>
+        this<span class="s1">.hotelName = hotelName</span><span class="s0">;</span>
+        this<span class="s1">.hotelType = hotelType</span><span class="s0">;</span>
+        this<span class="s1">.hotelAddress = hotelAddress</span><span class="s0">;</span>
+        this<span class="s1">.hotelPhoneNo = hotelPhoneNo</span><span class="s0">;</span>
+        this<span class="s1">.hotelRating = hotelRating</span><span class="s0">;</span>
+        this<span class="s1">.roomList = roomList</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    @Override
+    <span class="s0">public </span><span class="s1">String toString() {</span>
+        <span class="s0">return </span><span class="s2">&quot;Hotel{&quot; </span><span class="s1">+</span>
+                <span class="s2">&quot;hotelId='&quot; </span><span class="s1">+ hotelId + </span><span class="s2">'</span><span class="s0">\'</span><span class="s2">' </span><span class="s1">+</span>
+                <span class="s2">&quot;, hotelName='&quot; </span><span class="s1">+ hotelName + </span><span class="s2">'</span><span class="s0">\'</span><span class="s2">' </span><span class="s1">+</span>
+                <span class="s2">&quot;, hotelType='&quot; </span><span class="s1">+ hotelType + </span><span class="s2">'</span><span class="s0">\'</span><span class="s2">' </span><span class="s1">+</span>
+                <span class="s2">&quot;, hotelAddress='&quot; </span><span class="s1">+ hotelAddress + </span><span class="s2">'</span><span class="s0">\'</span><span class="s2">' </span><span class="s1">+</span>
+                <span class="s2">&quot;, hotelPhoneNo='&quot; </span><span class="s1">+ hotelPhoneNo + </span><span class="s2">'</span><span class="s0">\'</span><span class="s2">' </span><span class="s1">+</span>
+                <span class="s2">&quot;, hotelRating='&quot; </span><span class="s1">+ hotelRating + </span><span class="s2">'</span><span class="s0">\'</span><span class="s2">' </span><span class="s1">+</span>
+                <span class="s2">&quot;, roomList=&quot; </span><span class="s1">+ roomList +</span>
+                <span class="s2">'}'</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">String getHotelId() {</span>
+        <span class="s0">return </span><span class="s1">hotelId</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setHotelId(String hotelId) {</span>
+        <span class="s0">this</span><span class="s1">.hotelId = hotelId</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">String getHotelName() {</span>
+        <span class="s0">return </span><span class="s1">hotelName</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setHotelName(String hotelName) {</span>
+        <span class="s0">this</span><span class="s1">.hotelName = hotelName</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">String getHotelType() {</span>
+        <span class="s0">return </span><span class="s1">hotelType</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setHotelType(String hotelType) {</span>
+        <span class="s0">this</span><span class="s1">.hotelType = hotelType</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">String getHotelAddress() {</span>
+        <span class="s0">return </span><span class="s1">hotelAddress</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setHotelAddress(String hotelAddress) {</span>
+        <span class="s0">this</span><span class="s1">.hotelAddress = hotelAddress</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">String getHotelPhoneNo() {</span>
+        <span class="s0">return </span><span class="s1">hotelPhoneNo</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setHotelPhoneNo(String hotelPhoneNo) {</span>
+        <span class="s0">this</span><span class="s1">.hotelPhoneNo = hotelPhoneNo</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">String getHotelRating() {</span>
+        <span class="s0">return </span><span class="s1">hotelRating</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setHotelRating(String hotelRating) {</span>
+        <span class="s0">this</span><span class="s1">.hotelRating = hotelRating</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">List&lt;Room&gt; getRoomList() {</span>
+        <span class="s0">return </span><span class="s1">roomList</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setRoomList(List&lt;Room&gt; roomList) {</span>
+        <span class="s0">this</span><span class="s1">.roomList = roomList</span><span class="s0">;</span>
+    <span class="s1">}</span>
+}</pre>
+</body>
+</html>

@@ -73,13 +73,13 @@ public class Room
 	 * @param roomcost the roomcost
 	 * @param customer the customer
 	 */
-	public Room(int roomid, String roomtype, boolean isbooked, String roomowner, Timestamp checkin, Timestamp checkout,
+	public Room(int roomid, String roomtype, boolean isbooked, Timestamp checkin, Timestamp checkout,
 			int roomcost, Customer customer) {
 		super();
 		this.roomid = roomid;
 		this.roomtype = roomtype;
 		this.isbooked = isbooked;
-		this.roomowner = roomowner;
+		
 		this.checkin = checkin;
 		this.checkout = checkout;
 		this.roomcost = roomcost;
@@ -87,8 +87,7 @@ public class Room
 	}
 	@Override
 	public String toString() {
-		return "Room [roomid=" + roomid + ", roomtype=" + roomtype + ", isbooked=" + isbooked + ", roomowner="
-				+ roomowner + ", checkin=" + checkin + ", checkout=" + checkout + ", roomcost=" + roomcost
+		return "Room [roomid=" + roomid + ", roomtype=" + roomtype + ", isbooked=" + isbooked + ", checkin=" + checkin + ", checkout=" + checkout + ", roomcost=" + roomcost
 				+ ", customer=" + customer + "]";
 	}
 	

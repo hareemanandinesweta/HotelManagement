@@ -7,7 +7,6 @@ public class Room
 	int roomid;
 	String roomtype;
 	boolean isbooked;
-	String roomowner;
 	Timestamp checkin;
 	Timestamp checkout;
 	int roomcost;

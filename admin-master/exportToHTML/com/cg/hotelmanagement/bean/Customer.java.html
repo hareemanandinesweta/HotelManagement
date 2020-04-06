@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>Customer.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Customer.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">com.cg.hotelmanagement.bean</span><span class="s0">;</span>
+
+public class <span class="s1">Customer {</span>
+
+    <span class="s0">private </span><span class="s1">String customerId</span><span class="s0">;</span>
+    private <span class="s1">String customerUsername</span><span class="s0">;</span>
+    private <span class="s1">String customerFirstName</span><span class="s0">;</span>
+    private <span class="s1">String customerLastName</span><span class="s0">;</span>
+    private <span class="s1">String gender</span><span class="s0">;</span>
+    private <span class="s1">String customerAddress</span><span class="s0">;</span>
+    private <span class="s1">String customerIdNo</span><span class="s0">;</span>
+    private <span class="s1">String customerPhoneNo</span><span class="s0">;</span>
+    private <span class="s1">String customerEmailId</span><span class="s0">;</span>
+    private <span class="s1">String customerPassword</span><span class="s0">;</span>
+
+    public <span class="s1">Customer(String customerId</span><span class="s0">, </span><span class="s1">String customerUsername</span><span class="s0">, </span><span class="s1">String customerFirstName</span><span class="s0">, </span><span class="s1">String customerLastName</span><span class="s0">, </span><span class="s1">String gender</span><span class="s0">, </span><span class="s1">String customerAddress</span><span class="s0">, </span><span class="s1">String customerIdNo</span><span class="s0">, </span><span class="s1">String customerPhoneNo</span><span class="s0">, </span><span class="s1">String customerEmailId</span><span class="s0">, </span><span class="s1">String customerPassword) {</span>
+        <span class="s0">this</span><span class="s1">.customerId = customerId</span><span class="s0">;</span>
+        this<span class="s1">.customerUsername = customerUsername</span><span class="s0">;</span>
+        this<span class="s1">.customerFirstName = customerFirstName</span><span class="s0">;</span>
+        this<span class="s1">.customerLastName = customerLastName</span><span class="s0">;</span>
+        this<span class="s1">.gender = gender</span><span class="s0">;</span>
+        this<span class="s1">.customerAddress = customerAddress</span><span class="s0">;</span>
+        this<span class="s1">.customerIdNo = customerIdNo</span><span class="s0">;</span>
+        this<span class="s1">.customerPhoneNo = customerPhoneNo</span><span class="s0">;</span>
+        this<span class="s1">.customerEmailId = customerEmailId</span><span class="s0">;</span>
+        this<span class="s1">.customerPassword = customerPassword</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    @Override
+    <span class="s0">public </span><span class="s1">String toString() {</span>
+        <span class="s0">return </span><span class="s2">&quot;Customer{&quot; </span><span class="s1">+</span>
+                <span class="s2">&quot;customerId='&quot; </span><span class="s1">+ customerId + </span><span class="s2">'</span><span class="s0">\'</span><span class="s2">' </span><span class="s1">+</span>
+                <span class="s2">&quot;, customerUsername='&quot; </span><span class="s1">+ customerUsername + </span><span class="s2">'</span><span class="s0">\'</span><span class="s2">' </span><span class="s1">+</span>
+                <span class="s2">&quot;, customerFirstName='&quot; </span><span class="s1">+ customerFirstName + </span><span class="s2">'</span><span class="s0">\'</span><span class="s2">' </span><span class="s1">+</span>
+                <span class="s2">&quot;, customerLastName='&quot; </span><span class="s1">+ customerLastName + </span><span class="s2">'</span><span class="s0">\'</span><span class="s2">' </span><span class="s1">+</span>
+                <span class="s2">&quot;, gender='&quot; </span><span class="s1">+ gender + </span><span class="s2">'</span><span class="s0">\'</span><span class="s2">' </span><span class="s1">+</span>
+                <span class="s2">&quot;, customerAddress='&quot; </span><span class="s1">+ customerAddress + </span><span class="s2">'</span><span class="s0">\'</span><span class="s2">' </span><span class="s1">+</span>
+                <span class="s2">&quot;, customerIdNo='&quot; </span><span class="s1">+ customerIdNo + </span><span class="s2">'</span><span class="s0">\'</span><span class="s2">' </span><span class="s1">+</span>
+                <span class="s2">&quot;, customerPhoneNo='&quot; </span><span class="s1">+ customerPhoneNo + </span><span class="s2">'</span><span class="s0">\'</span><span class="s2">' </span><span class="s1">+</span>
+                <span class="s2">&quot;, customerEmailId='&quot; </span><span class="s1">+ customerEmailId + </span><span class="s2">'</span><span class="s0">\'</span><span class="s2">' </span><span class="s1">+</span>
+                <span class="s2">&quot;, customerPassword='&quot; </span><span class="s1">+ customerPassword + </span><span class="s2">'</span><span class="s0">\'</span><span class="s2">' </span><span class="s1">+</span>
+                <span class="s2">'}'</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">String getCustomerId() {</span>
+        <span class="s0">return </span><span class="s1">customerId</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setCustomerId(String customerId) {</span>
+        <span class="s0">this</span><span class="s1">.customerId = customerId</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">String getCustomerUsername() {</span>
+        <span class="s0">return </span><span class="s1">customerUsername</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setCustomerUsername(String customerUsername) {</span>
+        <span class="s0">this</span><span class="s1">.customerUsername = customerUsername</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">String getCustomerFirstName() {</span>
+        <span class="s0">return </span><span class="s1">customerFirstName</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setCustomerFirstName(String customerFirstName) {</span>
+        <span class="s0">this</span><span class="s1">.customerFirstName = customerFirstName</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">String getCustomerLastName() {</span>
+        <span class="s0">return </span><span class="s1">customerLastName</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setCustomerLastName(String customerLastName) {</span>
+        <span class="s0">this</span><span class="s1">.customerLastName = customerLastName</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">String getGender() {</span>
+        <span class="s0">return </span><span class="s1">gender</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setGender(String gender) {</span>
+        <span class="s0">this</span><span class="s1">.gender = gender</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">String getCustomerAddress() {</span>
+        <span class="s0">return </span><span class="s1">customerAddress</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setCustomerAddress(String customerAddress) {</span>
+        <span class="s0">this</span><span class="s1">.customerAddress = customerAddress</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">String getCustomerIdNo() {</span>
+        <span class="s0">return </span><span class="s1">customerIdNo</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setCustomerIdNo(String customerIdNo) {</span>
+        <span class="s0">this</span><span class="s1">.customerIdNo = customerIdNo</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">String getCustomerPhoneNo() {</span>
+        <span class="s0">return </span><span class="s1">customerPhoneNo</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setCustomerPhoneNo(String customerPhoneNo) {</span>
+        <span class="s0">this</span><span class="s1">.customerPhoneNo = customerPhoneNo</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">String getCustomerEmailId() {</span>
+        <span class="s0">return </span><span class="s1">customerEmailId</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setCustomerEmailId(String customerEmailId) {</span>
+        <span class="s0">this</span><span class="s1">.customerEmailId = customerEmailId</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">String getCustomerPassword() {</span>
+        <span class="s0">return </span><span class="s1">customerPassword</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setCustomerPassword(String customerPassword) {</span>
+        <span class="s0">this</span><span class="s1">.customerPassword = customerPassword</span><span class="s0">;</span>
+    <span class="s1">}</span>
+}
+</pre>
+</body>
+</html>

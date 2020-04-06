@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Booking.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Booking.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">com.cg.hotelmanagement.bean</span><span class="s0">;</span>
+
+public class <span class="s1">Booking {</span>
+
+    <span class="s0">private </span><span class="s1">String bookingId</span><span class="s0">;</span>
+    private <span class="s1">String bookingCheckIn</span><span class="s0">;</span>
+    private <span class="s1">String bookingCheckOut</span><span class="s0">;</span>
+    private <span class="s1">String bookingCity</span><span class="s0">;</span>
+    private <span class="s1">Customer customer</span><span class="s0">;</span>
+
+    public <span class="s1">Booking(String bookingId</span><span class="s0">, </span><span class="s1">String bookingCheckIn</span><span class="s0">, </span><span class="s1">String bookingCheckOut</span><span class="s0">, </span><span class="s1">String bookingCity</span><span class="s0">, </span><span class="s1">Customer customer) {</span>
+        <span class="s0">this</span><span class="s1">.bookingId = bookingId</span><span class="s0">;</span>
+        this<span class="s1">.bookingCheckIn = bookingCheckIn</span><span class="s0">;</span>
+        this<span class="s1">.bookingCheckOut = bookingCheckOut</span><span class="s0">;</span>
+        this<span class="s1">.bookingCity = bookingCity</span><span class="s0">;</span>
+        this<span class="s1">.customer = customer</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    @Override
+    <span class="s0">public </span><span class="s1">String toString() {</span>
+        <span class="s0">return </span><span class="s2">&quot;Booking{&quot; </span><span class="s1">+</span>
+                <span class="s2">&quot;bookingId='&quot; </span><span class="s1">+ bookingId + </span><span class="s2">'</span><span class="s0">\'</span><span class="s2">' </span><span class="s1">+</span>
+                <span class="s2">&quot;, bookingCheckIn='&quot; </span><span class="s1">+ bookingCheckIn + </span><span class="s2">'</span><span class="s0">\'</span><span class="s2">' </span><span class="s1">+</span>
+                <span class="s2">&quot;, bookingCheckOut='&quot; </span><span class="s1">+ bookingCheckOut + </span><span class="s2">'</span><span class="s0">\'</span><span class="s2">' </span><span class="s1">+</span>
+                <span class="s2">&quot;, bookingCity='&quot; </span><span class="s1">+ bookingCity + </span><span class="s2">'</span><span class="s0">\'</span><span class="s2">' </span><span class="s1">+</span>
+                <span class="s2">&quot;, customer=&quot; </span><span class="s1">+ customer +</span>
+                <span class="s2">'}'</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">String getBookingId() {</span>
+        <span class="s0">return </span><span class="s1">bookingId</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setBookingId(String bookingId) {</span>
+        <span class="s0">this</span><span class="s1">.bookingId = bookingId</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">String getBookingCheckIn() {</span>
+        <span class="s0">return </span><span class="s1">bookingCheckIn</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setBookingCheckIn(String bookingCheckIn) {</span>
+        <span class="s0">this</span><span class="s1">.bookingCheckIn = bookingCheckIn</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">String getBookingCheckOut() {</span>
+        <span class="s0">return </span><span class="s1">bookingCheckOut</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setBookingCheckOut(String bookingCheckOut) {</span>
+        <span class="s0">this</span><span class="s1">.bookingCheckOut = bookingCheckOut</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">String getBookingCity() {</span>
+        <span class="s0">return </span><span class="s1">bookingCity</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setBookingCity(String bookingCity) {</span>
+        <span class="s0">this</span><span class="s1">.bookingCity = bookingCity</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">Customer getCustomer() {</span>
+        <span class="s0">return </span><span class="s1">customer</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setCustomer(Customer customer) {</span>
+        <span class="s0">this</span><span class="s1">.customer = customer</span><span class="s0">;</span>
+    <span class="s1">}</span>
+}
+</pre>
+</body>
+</html>

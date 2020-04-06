@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>City.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+City.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">com.cg.hotelmanagement.bean</span><span class="s0">;</span>
+
+import <span class="s1">java.util.LinkedList</span><span class="s0">;</span>
+import <span class="s1">java.util.List</span><span class="s0">;</span>
+
+public class <span class="s1">City {</span>
+
+    <span class="s0">private </span><span class="s1">String cityId</span><span class="s0">;</span>
+    private <span class="s1">String cityName</span><span class="s0">;</span>
+    private <span class="s1">List&lt;Hotel&gt; hotelList = </span><span class="s0">new </span><span class="s1">LinkedList&lt;Hotel&gt;()</span><span class="s0">;</span>
+
+    public <span class="s1">City(String cityId</span><span class="s0">, </span><span class="s1">String cityName</span><span class="s0">, </span><span class="s1">List&lt;Hotel&gt; hotelList) {</span>
+        <span class="s0">this</span><span class="s1">.cityId = cityId</span><span class="s0">;</span>
+        this<span class="s1">.cityName = cityName</span><span class="s0">;</span>
+        this<span class="s1">.hotelList = hotelList</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    @Override
+    <span class="s0">public </span><span class="s1">String toString() {</span>
+        <span class="s0">return </span><span class="s2">&quot;City{&quot; </span><span class="s1">+</span>
+                <span class="s2">&quot;cityId='&quot; </span><span class="s1">+ cityId + </span><span class="s2">'</span><span class="s0">\'</span><span class="s2">' </span><span class="s1">+</span>
+                <span class="s2">&quot;, cityName='&quot; </span><span class="s1">+ cityName + </span><span class="s2">'</span><span class="s0">\'</span><span class="s2">' </span><span class="s1">+</span>
+                <span class="s2">&quot;, hotelList=&quot; </span><span class="s1">+ hotelList +</span>
+                <span class="s2">'}'</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">String getCityId() {</span>
+        <span class="s0">return </span><span class="s1">cityId</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setCityId(String cityId) {</span>
+        <span class="s0">this</span><span class="s1">.cityId = cityId</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">String getCityName() {</span>
+        <span class="s0">return </span><span class="s1">cityName</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setCityName(String cityName) {</span>
+        <span class="s0">this</span><span class="s1">.cityName = cityName</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">List&lt;Hotel&gt; getHotelList() {</span>
+        <span class="s0">return </span><span class="s1">hotelList</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setHotelList(List&lt;Hotel&gt; hotelList) {</span>
+        <span class="s0">this</span><span class="s1">.hotelList = hotelList</span><span class="s0">;</span>
+    <span class="s1">}</span>
+}
+</pre>
+</body>
+</html>
